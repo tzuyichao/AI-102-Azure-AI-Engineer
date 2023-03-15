@@ -1,0 +1,181 @@
+[
+  {
+    "ImageUrl": "https://moderatorsampleimages.blob.core.windows.net/samples/sample2.jpg",
+    "ImageModeration": {
+      "CacheID": "038a4f70-02c1-4376-9209-3ebd513457c6_638144436218370629",
+      "Result": false,
+      "TrackingId": "56918157-f564-455d-a580-b5e518f4e929",
+      "AdultClassificationScore": 0.025337669998407364,
+      "IsImageAdultClassified": false,
+      "RacyClassificationScore": 0.05301359295845032,
+      "IsImageRacyClassified": false,
+      "AdvancedInfo": [
+        {
+          "Key": "ImageDownloadTimeInMs",
+          "Value": "1891"
+        },
+        {
+          "Key": "ImageSizeInBytes",
+          "Value": "273405"
+        }
+      ],
+      "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+      }
+    },
+    "TextDetection": {
+      "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+      },
+      "Metadata": [
+        {
+          "Key": "ImageDownloadTimeInMs",
+          "Value": "1869"
+        },
+        {
+          "Key": "ImageSizeInBytes",
+          "Value": "273405"
+        }
+      ],
+      "TrackingId": "899dec00-5d02-4e19-bb97-73244740caf2",
+      "CacheId": "4e72803a-6e6a-4267-90ce-52d0d3b7e7bb_638144436255891491",
+      "Language": "",
+      "Text": "IF WE DID \nALL \nTHE THINGS \nWE ARE \nCAPABLE \nOF DOING, \nWE WOULD \nLITERALLY \nASTOUND \nOURSELVES. \n",
+      "Candidates": []
+    },
+    "FaceDetection": {
+      "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+      },
+      "TrackingId": "2b8aa242-6952-45cd-bec1-bc81447c84f6",
+      "CacheId": "db825dfb-93ee-491a-9e1e-c9c140ac8359_638144436290298109",
+      "Result": false,
+      "Count": 0,
+      "AdvancedInfo": [
+        {
+          "Key": "ImageDownloadTimeInMs",
+          "Value": "1846"
+        },
+        {
+          "Key": "ImageSizeInBytes",
+          "Value": "273405"
+        }
+      ],
+      "Faces": []
+    }
+  },
+  {
+    "ImageUrl": "https://moderatorsampleimages.blob.core.windows.net/samples/sample5.png",
+    "ImageModeration": {
+      "CacheID": "8f51567c-93bd-4926-aa90-eb4d9160f45b_638144436335906778",
+      "Result": false,
+      "TrackingId": "7bf5e94f-65af-4c39-8f66-69056d19b746",
+      "AdultClassificationScore": 0.001438833656720817,
+      "IsImageAdultClassified": false,
+      "RacyClassificationScore": 0.004629917559213936,
+      "IsImageRacyClassified": false,
+      "AdvancedInfo": [
+        {
+          "Key": "ImageDownloadTimeInMs",
+          "Value": "3068"
+        },
+        {
+          "Key": "ImageSizeInBytes",
+          "Value": "2278902"
+        }
+      ],
+      "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+      }
+    },
+    "TextDetection": {
+      "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+      },
+      "Metadata": [
+        {
+          "Key": "ImageDownloadTimeInMs",
+          "Value": "2989"
+        },
+        {
+          "Key": "ImageSizeInBytes",
+          "Value": "2278902"
+        }
+      ],
+      "TrackingId": "70b6a393-2e2d-44c0-90a5-0e7655dca87a",
+      "CacheId": "7e8242a9-9c91-4f43-8e29-707eb612ace2_638144436397902303",
+      "Language": "",
+      "Text": "",
+      "Candidates": []
+    },
+    "FaceDetection": {
+      "Status": {
+        "Code": 3000,
+        "Description": "OK",
+        "Exception": null
+      },
+      "TrackingId": "b19b9911-bfd8-4cd9-a660-cdf965f006d5",
+      "CacheId": "8ba556ea-4853-4438-8ea6-9b7e76a5c2c2_638144436446445528",
+      "Result": true,
+      "Count": 6,
+      "AdvancedInfo": [
+        {
+          "Key": "ImageDownloadTimeInMs",
+          "Value": "2962"
+        },
+        {
+          "Key": "ImageSizeInBytes",
+          "Value": "2278902"
+        }
+      ],
+      "Faces": [
+        {
+          "Bottom": 633,
+          "Left": 297,
+          "Right": 531,
+          "Top": 399
+        },
+        {
+          "Bottom": 503,
+          "Left": 1228,
+          "Right": 1453,
+          "Top": 278
+        },
+        {
+          "Bottom": 595,
+          "Left": 47,
+          "Right": 257,
+          "Top": 385
+        },
+        {
+          "Bottom": 619,
+          "Left": 966,
+          "Right": 1168,
+          "Top": 417
+        },
+        {
+          "Bottom": 590,
+          "Left": 589,
+          "Right": 781,
+          "Top": 398
+        },
+        {
+          "Bottom": 578,
+          "Left": 807,
+          "Right": 978,
+          "Top": 407
+        }
+      ]
+    }
+  }
+]
