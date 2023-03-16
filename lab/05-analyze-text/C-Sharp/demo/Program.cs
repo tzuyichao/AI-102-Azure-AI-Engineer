@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 using Azure;
 using Azure.AI.TextAnalytics;
-using Microsoft.Extensions.Configuration;
 
 namespace text_analytics
 {
