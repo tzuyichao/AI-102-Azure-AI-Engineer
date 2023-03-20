@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Azure.AI.AnomalyDetector" Version="3.0.0-preview.6" />
+  </ItemGroup>
+
 </Project>
