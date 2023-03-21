@@ -1,0 +1,23 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+]
+
+# SendActivity_Greeting_text()
+- Hi! I'm WeatherBot.
+# TextInput_Prompt_V9L7Sn()
+[Activity
+    Text = ${TextInput_Prompt_V9L7Sn_text()}
+]
+
+# TextInput_Prompt_V9L7Sn_text()
+- What's your name?
+# SendActivity_PfBIaX()
+[Activity
+    Text = ${SendActivity_PfBIaX_text()}
+]
+
+# SendActivity_PfBIaX_text()
+- Hello ${user.name}, nice to meet you!

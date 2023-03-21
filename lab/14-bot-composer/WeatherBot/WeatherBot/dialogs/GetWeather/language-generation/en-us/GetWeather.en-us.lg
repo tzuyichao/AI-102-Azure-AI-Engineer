@@ -1,0 +1,23 @@
+[import](common.lg)
+
+# TextInput_Prompt_3nnUyo()
+[Activity
+    Text = ${TextInput_Prompt_3nnUyo_text()}
+]
+
+# TextInput_Prompt_3nnUyo_text()
+- Enter your City.
+# SendActivity_5GUZVD()
+[Activity
+    Text = ${SendActivity_5GUZVD_text()}
+]
+
+# SendActivity_5GUZVD_text()
+- I got an error: ${dialog.api_response.content.message}.
+# SendActivity_3YxhX7()
+[Activity
+    Text = ${SendActivity_3YxhX7_text()}
+]
+
+# SendActivity_3YxhX7_text()
+- The weather in ${dialog.city} is ${dialog.weather} and the temperature is ${dialog.temp}&deg;.
