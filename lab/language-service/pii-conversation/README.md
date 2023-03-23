@@ -179,7 +179,7 @@ curl -i -X POST https://your-language-endpoint-here/language/analyze-conversatio
 `
 ```
 
-取得Jab link會在submit job的response header的</code>operation-location</code>裡面。
+取得Job link會在submit job的response header的</code>operation-location</code>裡面。
 
 ## Get the result
 
