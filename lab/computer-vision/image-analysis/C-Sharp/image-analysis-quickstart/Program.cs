@@ -21,7 +21,7 @@ namespace get_started
             var analysisOptions = new ImageAnalysisOptions()
             {
                 // ImageAnalysisFeature.Caption not support East Asia 2023/3/24
-                Features = ImageAnalysisFeature.Tags | ImageAnalysisFeature.Text | ImageAnalysisFeature.People | ImageAnalysisFeature.Objects | ImageAnalysisFeature.People,
+                Features = ImageAnalysisFeature.Tags | ImageAnalysisFeature.Text | ImageAnalysisFeature.People | ImageAnalysisFeature.Objects | ImageAnalysisFeature.CropSuggestions,
                 Language = "en",
                 GenderNeutralCaption = true
             };
@@ -59,6 +59,34 @@ namespace get_started
                     foreach(var tag in result.Tags)
                     {
                         Console.WriteLine($"  Tag Name: {tag.Name}, Confidence: {tag.Confidence}");
+                    }
+                }
+
+                if(result.People != null)
+                {
+                    Console.WriteLine(" People:");
+                    foreach(var people in result.People)
+                    {
+                        
+                        Console.WriteLine($"  {people.BoundingBox}, Confidence: {people.Confidence}");
+                    }
+                }
+
+                if(result.Objects != null)
+                {
+                    Console.WriteLine(" Objects:");
+                    foreach(var obj in result.Objects)
+                    {
+                        Console.WriteLine($"  Name: {obj.Name}, Position: {obj.BoundingBox}, Confidence: {obj.Confidence}");
+                    }
+                }
+
+                if(result.CropSuggestions != null)
+                {
+                    Console.WriteLine(" CropSuggestions:");
+                    foreach(var sugg in result.CropSuggestions)
+                    {
+                        Console.WriteLine($"  {sugg.BoundingBox} {sugg.AspectRatio}");
                     }
                 }
             }
