@@ -48,6 +48,9 @@ namespace ComputerVisionGetstart
             Console.WriteLine("READ FILE FROM URL");
             Console.WriteLine();
 
+            // Read text from URL with a specific model version
+            // var textHeaders = await client.ReadAsync(urlFile,null,null,"2022-04-30");
+
             var textHeader = await client.ReadAsync(urlFile);
             string operationLocation = textHeader.OperationLocation;
             Console.WriteLine($"Operation Location: {operationLocation}");
